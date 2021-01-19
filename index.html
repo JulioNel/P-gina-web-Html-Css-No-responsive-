@@ -1,5 +1,9 @@
+<!--Página web de práctica (No responsive)-->
+<!--Esta es la página principal, Landing Page o página de incio-->
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Metadata-->
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +11,7 @@
     <title>Monster Gym</title>
 
     <link rel="stylesheet" href="style.css">
+    <!--Se importan algunas fuentes de Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -14,7 +19,10 @@
 </head>
 
 <body>
-    <!--Página web de práctica-->
+
+
+    <!--Menú de navegación estático (position fixed)-->
+    <!--El menú es desplegable y contiene submenú-->
     <header>
         <nav>
             <ul>
@@ -35,12 +43,12 @@
 
         </nav>
     </header>
-    <!--Carrousel de fotos-->
-
+    <!--Carrusel de fotos-->
+    <!--El Carrusel es hecho con Html y Css (No JavaScript)-->
     <main>
 
         <div class="container1">
-
+            <!--Cada foto es un elememto de una lista desordenada-->
             <ul class="slider">
                 <li id="slide1">
                     <img src="gimnasio.jpg" />
@@ -56,6 +64,7 @@
 
         </div>
 
+        <!--Menú de botones circulares que permiten la navegación entre fotos-->
         <ul class="menu">
             <li>
                 <a href="#slide1"> </a>
@@ -68,6 +77,7 @@
             </li>
         </ul>
 
+        <!--Descripción de la empresa-->
         <section id="Nosotros">
             <h1 class="titulo">Monster Gym</h1>
             <p>Monsters Gym es un gimnasio virtual, que te acompañará paso a paso en todo tu proceso de transformación corporal. Podrás encontrar guías completas de entrenamiento que se adapten facilmente a tus condiciones físicas, a la disponibilidad de
@@ -80,6 +90,7 @@
 
 
 
+        <!--Productos y Servicios que ofrece la empresa con su enlace a la página específica-->
         <section id="Servicios">
             <h2>Productos y Servicios</h2>
             <article class="container">
@@ -110,6 +121,7 @@
             </article>
         </section>
 
+        <!--Sección de clases gratuitas-->
         <section id="Clases">
             <h2>Clases gratuitas</h2>
             <p>Disfruta de la increible variedad de clases gratuitas que tenemos para ti, organizadas por distintas categorías</p>
@@ -119,6 +131,7 @@
             <a href="Clases.html">Ver todo</a>
         </section>
 
+        <!--Formulario de contacto-->
         <section id="Contacto">
 
             <div class="Formulario">
@@ -141,6 +154,7 @@
         </section>
     </main>
 
+    <!--Pie de página-->
     <footer>
         <div>
             <span>Monster Gym</span>
