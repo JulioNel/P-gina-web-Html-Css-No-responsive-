@@ -1,0 +1,425 @@
+    /*Se configuran todos los elementos del documento web*/
+    
+    * {
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    /*Se configura el cuerpo del documento*/
+    
+    body {
+        margin: 0;
+        padding: 0;
+        padding-top: 150px;
+        background-color: #DDDDDD;
+    }
+    /*Encabezado estático para el menú principal*/
+    
+    header {
+        background: black;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    header nav {
+        padding: 20px;
+        margin: 0px;
+    }
+    /*La lista del menú se configura flexible*/
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    
+    header nav ul li {
+        list-style: none;
+        font-size: 20pt;
+    }
+    
+    header nav ul li a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        text-align: justify;
+        padding: 10px;
+    }
+    /*Pseudoclase para el paso del botón*/
+    
+    header nav ul li a:hover {
+        border-bottom: 2px solid #39FF14;
+        z-index: 100;
+    }
+    /*Pseudoclase para el botón activo*/
+    
+    header nav ul li a:active {
+        color: #39FF14;
+    }
+    /*Configuración del logo*/
+    
+    header nav ul li a.logo {
+        font-size: 25pt;
+        color: black;
+        background-color: #39FF14;
+        font-family: 'Rock Salt', cursive;
+        border: 2px solid black;
+        padding: 15px;
+        border-radius: 80%;
+    }
+    
+    header nav ul li a.logo:hover {
+        background-color: black;
+        border: 2px solid #39FF14;
+        color: #39FF14;
+    }
+    /*Menú desplegable*/
+    
+    header nav ul li ul {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    
+    header nav ul li:hover ul {
+        display: block;
+    }
+    
+    header nav ul li ul li {
+        position: relative;
+        padding: 20px;
+    }
+    /*Se configuran los headings de nivel 2*/
+    
+    h2 {
+        text-align: center;
+        font-size: 40pt;
+        padding-top: 50px;
+    }
+    /*Configuración del Slider y el menú de fotos*/
+    
+    .container1 {
+        position: relative;
+        top: -29px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    ul.slider {
+        list-style: none;
+        position: relative;
+        top: 0px;
+        margin: 0px;
+        width: inherit;
+        height: inherit;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul.slider li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+    }
+    
+    ul.slider li img {
+        width: 100%;
+        height: inherit;
+    }
+    
+    ul.slider li:first-child {
+        opacity: 1;
+        /*Mostramos el primer <li>*/
+    }
+    
+    ul.slider li:target {
+        opacity: 1;
+        /*Mostramos el <li> del enlace que pulsemos*/
+    }
+    
+    .menu {
+        position: relative;
+        text-align: center;
+        margin: -55px;
+        z-index: 90;
+    }
+    
+    .menu li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .menu li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #39FF14;
+        border-radius: 100%;
+    }
+    
+    .menu li a:hover {
+        background-color: #39FF14;
+    }
+    /*Configuración del título principal*/
+    
+    h1.titulo {
+        display: block;
+        position: static;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 60px;
+        width: 35%;
+        text-align: center;
+        color: black;
+        background-color: #39FF14;
+        padding: 15px;
+        border: 3px solid black;
+        border-radius: 80%;
+        font-size: 35pt;
+        font-family: 'Rock Salt', cursive;
+    }
+    /*Se configuran los párrafos globales*/
+    
+    p {
+        text-align: justify;
+        margin: 50px;
+        font-size: 20pt;
+    }
+    /*Contenedor flexible para los servicios*/
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: auto;
+    }
+    
+    .item {
+        margin: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        width: 30%;
+    }
+    
+    .item h3 {
+        text-align: center;
+        font-size: 22pt;
+        background-color: black;
+        color: white;
+        border-radius: 17px 17px 0 0;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    
+    .item img {
+        width: 100%;
+        height: 40%;
+        border-bottom: 1px solid black;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .item a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin: auto;
+        margin-bottom: 10px;
+        width: 30%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    
+    .item a:hover {
+        width: 30%;
+        background-color: #39FF14;
+        color: black;
+    }
+    
+    .item a:active {
+        background-color: #CCCCCC
+    }
+    /*Se configura el párrafo del menú de la sección de servicios*/
+    
+    #Servicios p {
+        margin: 20px
+    }
+    /*Configuración de las clases gratuitas*/
+    
+    #Clases a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        width: 7%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    
+    #Clases a:hover {
+        width: 7%;
+        background-color: #39FF14;
+        color: black;
+    }
+    
+    .video {
+        display: block;
+        text-align: center;
+    }
+    /*Configuración del formulario de contacto*/
+    
+    .Formulario {
+        width: 55%;
+        height: 750px;
+        margin: auto;
+        padding: 0;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 2px 2px gray;
+    }
+    
+    .Formulario label {
+        display: block;
+        margin: 30px;
+        font-size: 20pt;
+    }
+    
+    .Formulario input {
+        display: block;
+        margin: 30px;
+        padding: 10px;
+        width: 90%;
+        border-radius: 10px;
+        border: 1px solid black
+    }
+    
+    .Formulario button {
+        display: block;
+        background-color: black;
+        color: white;
+        margin: 30px;
+        cursor: pointer;
+        padding: 10px;
+        width: 90%;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    
+    .Formulario button:hover {
+        background-color: #39FF14;
+    }
+    
+    .Formulario textarea {
+        display: block;
+        margin: 30px;
+        padding: 10px;
+        width: 90%;
+        border-radius: 10px;
+        border: 1px solid black
+    }
+    
+    .Formulario h2 {
+        padding: 0;
+    }
+    /*Configuración del pie de página*/
+    
+    footer {
+        background-color: black;
+        color: white;
+        height: 500px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+    footer h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 18pt
+    }
+    
+    footer span {
+        display: block;
+        margin-top: 150px;
+        margin-left: 20px;
+        font-size: 25pt;
+        color: black;
+        background-color: #39FF14;
+        font-family: 'Rock Salt', cursive;
+        border: 2px solid black;
+        padding: 15px;
+        border-radius: 80%;
+    }
+    
+    .info {
+        padding: 10px;
+        padding-top: 20px;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 33%;
+        font-size: 15pt;
+    }
+    
+    .info>p,
+    ul {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 0;
+        font-size: 15pt;
+    }
+    
+    .info li {
+        padding: 10px;
+    }
+    
+    footer img {
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    footer img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    
+    hr {
+        margin: 50px;
+    }

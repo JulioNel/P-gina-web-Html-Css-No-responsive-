@@ -1,0 +1,194 @@
+<!--Página web de práctica (No responsive)-->
+<!--Esta es la página principal, Landing Page o página de incio-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Metadata-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Gym</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--Se importan algunas fuentes de Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!--Menú de navegación estático (position fixed)-->
+    <!--El menú es desplegable y contiene submenú-->
+    <header>
+        <nav>
+            <ul>
+
+                <li><a href="#" class="logo">Monster Gym</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Servicios">Productos y Servicios</a>
+                    <ul>
+                        <li><a href="Entrenamiento.html">Guías de Entrenamiento</a></li>
+                        <li><a href="Alimentacion.html">Guías de Alimentación</a></li>
+                        <li><a href="Clases.html">Suplementos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Clases">Clases gratuitas</a></li>
+                <li><a href="#Contacto">Contáctanos</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <!--Carrusel de fotos-->
+    <!--El Carrusel es hecho con Html y Css (No JavaScript)-->
+    <main>
+
+        <div class="container1">
+            <!--Cada foto es un elememto de una lista desordenada-->
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="gimnasio.jpg" />
+                </li>
+                <li id="slide2">
+                    <img src="training.jpg" />
+                </li>
+                <li id="slide3">
+                    <img src="banner.jpg" />
+                </li>
+            </ul>
+
+
+        </div>
+
+        <!--Menú de botones circulares que permiten la navegación entre fotos-->
+        <ul class="menu">
+            <li>
+                <a href="#slide1"> </a>
+            </li>
+            <li>
+                <a href="#slide2"> </a>
+            </li>
+            <li>
+                <a href="#slide3"> </a>
+            </li>
+        </ul>
+
+        <!--Descripción de la empresa-->
+        <section id="Nosotros">
+            <h1 class="titulo">Monster Gym</h1>
+            <p>Monsters Gym es un gimnasio virtual, que te acompañará paso a paso en todo tu proceso de transformación corporal. Podrás encontrar guías completas de entrenamiento que se adapten facilmente a tus condiciones físicas, a la disponibilidad de
+                tu tiempo y a los objetivos que tengas planteados.</p>
+            <p>Sabemos que a veces es dificil conseguir lo que te propones aunque te esfuerces y realices todas tus rutinas con dedicación. ¿Por qué sucede esto?, la respuesta es simple, no estás teniendo la alimentación adecuada. Existen diversos tipos
+                de cuerpos y según tu propósito una dieta totalmente distinta, contamos con una gran variedad de guías de alimentación para cada objetivo, ya que si tu objetivo es reducir masa corporal tu dieta será totalmente distinta a alguien que quiere
+                ganar masa muscular.</p>
+            <p>Finalmente si lo que quieres es complementar tu nutrición e incrementar tu masa muscular, contamos con una guía completa de suplementos y sus enlaces a los proveedores.</p>
+        </section>
+
+
+
+        <!--Productos y Servicios que ofrece la empresa con su enlace a la página específica-->
+        <section id="Servicios">
+            <h2>Productos y Servicios</h2>
+            <article class="container">
+                <div class="item">
+                    <h3>
+                        Guías de entrenamiento
+                    </h3>
+                    <img src="training.jpg" alt="">
+                    <p>Una recopilación completa de guías de entrenamiento organizados según tu nivel en principiante, intermedio y avanzado. También se incorpar rutinas especializadas dependiendo de tu objetivo que puede ser ganar fuerza, tonificar, quemar
+                        grasa, reducir medidas, entre otros.</p>
+                    <a href="Entrenamiento.html">Ir</a>
+                </div>
+                <div class="item">
+                    <h3>Guías de Alimentación</h3>
+                    <img src="alimentos.jpg" alt="">
+                    <p>Muchos fracasan en su transformación física porque no se alimentan de manera adecuada, aquí se incluyen guías de alimentación detalladas, es importante aclarar que por más conocimiento que se tenga sobre una dieta saludable se debe
+                        ser disiciplinado para que esta tenga un efecto positivo.</p>
+                    <a href="Alimentacion.html">Ir</a>
+                </div>
+                <div class="item">
+                    <h3>Suplementos</h3>
+                    <img src="suplementos.jpg" alt="">
+                    <p>Si llevas las guías de entrenamiento y alimentación no te vendría mal una ayuda extra para potencializar tus ganancias y acercarte más al éxito, ofrecemos una gran variedad de suplementos de alta calidad avalados por expertos del deporte.</p>
+                    <a href="Clases.html">Ir</a>
+
+                </div>
+
+            </article>
+        </section>
+
+        <!--Sección de clases gratuitas-->
+        <section id="Clases">
+            <h2>Clases gratuitas</h2>
+            <p>Disfruta de la increible variedad de clases gratuitas que tenemos para ti, organizadas por distintas categorías</p>
+            <div class="video">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/dOsIjGf4oRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a href="Clases.html">Ver todo</a>
+        </section>
+
+        <!--Formulario de contacto-->
+        <section id="Contacto">
+
+            <div class="Formulario">
+                <h2>Contáctanos</h2>
+                <p>Escríbenos y nos pondremos en contacto contigo</p>
+                <form action="/my-handling-form-page" method="post">
+
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Escriba tu nombre" />
+
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Escriba su correo electrónico" />
+
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message" placeholder="Escriba un mensaje"></textarea>
+                    <button>ENVIAR</button>
+
+            </div>
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <div>
+            <span>Monster Gym</span>
+        </div>
+        <div class="info">
+            <h2>Información</h2>
+            <ul>
+                <li>Somos Monster Gym</li>
+                <li>Gimnasio virtual para todos</li>
+                <li>Avalados por el ministerio del deporte</li>
+                <li>Con clases profesionales</li>
+                <li>Acceso ilimitado 100% gratuito</li>
+                <li>Guías completas de entrenamiento</li>
+            </ul>
+        </div>
+        <div class="info">
+            <h2>Contacto</h2>
+            <br/>
+            <p>Puedes ponerte en contacto con nosotros a través del formulario de contacto, al número +57 3######### o por los siguientes canales: </p>
+            <br>
+            <ul>
+                <li>Correo electronico: monstergym@gymworld.com</li>
+                <li>Facebook: MonsterGymColombia</li>
+                <li>Instagram:@MonsterGym</li>
+            </ul>
+            <br>
+            <h2>Síguenos en todas nuestras redes</h2>
+            <img src="facebook.png" alt="">
+            <img src="Instagram.png" alt="">
+            <img src="Twiter.png" alt="">
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
